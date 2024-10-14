@@ -1,50 +1,7 @@
-# React + TypeScript + Vite
+# React + Vite + Typescript + Tauri
+Welcome to the **React + Vite + TypeScript + Tauri** Proof of Concept (PoC) project! This repository demonstrates how integrating a Rust backend with Tauri can deliver blazing-fast performance within a simple timer application. By combining React for the frontend, Vite for rapid development, TypeScript for type safety, and Tauri for building lightweight desktop applications, this project showcases the synergy of these technologies in creating efficient and responsive applications.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## UI Showcase
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+![Timer Screenshot 1](https://raw.githubusercontent.com/sezRR/poc-tauri-vs-react/main/docs/img-1.png)
+![Timer Screenshot 2](https://raw.githubusercontent.com/sezRR/poc-tauri-vs-react/main/docs/img-2.png)
